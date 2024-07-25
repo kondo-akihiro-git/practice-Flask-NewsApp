@@ -2,3 +2,4 @@ Flask
 Flask-SQLAlchemy
 requests
 Flask-Migrate
+Flask-Admin

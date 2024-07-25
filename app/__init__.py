@@ -14,6 +14,10 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
+    # Adminの設定
+    from app.admin import setup_admin
+    setup_admin(app)
+
     from app.routes import main
     app.register_blueprint(main)
 

@@ -10,7 +10,6 @@ main = Blueprint('main', __name__)
 @main.route('/')
 def index():
     country = request.args.get('country', 'jp')
-    print(country)
     api_key = current_app.config['API_KEY']
     base_url = 'https://newsapi.org/v2/top-headlines'
 
